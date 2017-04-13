@@ -41,7 +41,13 @@ var carets = ["IXIC", "GSPC"]; // symbols that have carets at their front
 // HELPER FUNCTIONS -----------------------------------------------------------
 
 /** Returns size of a given data object. */
-Object.size = function(obj) { return Object.keys(obj).length; }; 
+Object.size = function(obj) { 
+    if (Object) {
+        return Object.keys(obj).length;
+    } else {
+        return 0;
+    }
+}; 
 
 /** Grabs the given field from the given record and fixes it, if necessary. 
  *
