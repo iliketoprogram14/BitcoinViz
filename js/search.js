@@ -22,7 +22,7 @@ allStockNames = []; // company names of allStocks
 nameToIdx = null; // maps company names to indices into allStocks
 links = ["http://ichart.finance.yahoo.com/table.csv?s=",
          "&a=06&b=16&c=2010&d=04&e=02&f=2013&g=d&ignore=.csv"]; // for hackery
-d3.json("/data/all_stocks.json", gotSymbols);
+d3.json("../data/all_stocks.json", gotSymbols);
 var symbolToAdd = null; // for adding newly found stocks
 var titleToAdd = null;  // for adding newly found stocks
 

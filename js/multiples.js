@@ -29,7 +29,7 @@ height = 550 - margin.top - margin.bottom,
 contextHeight = 50;
 contextWidth = width * .5;
 
-d3.json('/data/all_data.json', gotData);
+d3.json('../data/all_data.json', gotData);
 var currStockData = [];  // cache of stocks on the viz currently
 var charts = [];         // all charts on the viz currently
 var currField = "close"; // current field displayed on the viz
