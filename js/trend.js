@@ -17,7 +17,7 @@
 // GLOBAL VARIABLES/LOGIC -----------------------------------------------------
 
 var trendData = [];
-d3.csv('/bitcoin/data/bitcoin.csv', 
+d3.csv('/data/bitcoin.csv', 
        function(error, data) {
            if (error) return console.warn(error);
            data.forEach(function(d) {
