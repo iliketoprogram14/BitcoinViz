@@ -164,7 +164,7 @@ function prepareForCharts() {
     document.getElementById('articles-panel').style.visibility = "visible";
 
     if (articleData == null)
-        d3.json('/bitcoin/data/articles.json', gotArticlesData);
+        d3.json('/BitcoinViz/data/articles.json', gotArticlesData);
     else
         plotArticleTicks();
 }
